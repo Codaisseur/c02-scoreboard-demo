@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/Logo';
+import Title from "./components/Title";
+import LightSwitch from './components/LightSwitch';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
+          <Logo />
+          <Title>Hello, World</Title>
+          <LightSwitch />
+          <LightSwitch />
+          <LightSwitch off />
+          <LightSwitch />
+          <LightSwitch />
+          <LightSwitch />
+          <LightSwitch />
+
           <a
             className="App-link"
             href="https://reactjs.org"
